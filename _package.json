@@ -1,12 +1,9 @@
 {
-  "name": "@jumib/sp-stories",
+  "name": "sp-stories2",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "description": "스토리북 빌드 테스트",
-  "version": "0.1.0",
-  "license": "MIT",
-  "main": "dist/index.ts",
-  "repository": "https://github.com/jumib/sp-stories.git#test/npm-release",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && cross-env BABEL_ENV=production babel src -d dist",
@@ -36,7 +33,6 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "auto": "^11.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -50,9 +46,7 @@
   },
   "packageManager": "yarn@4.4.1",
   "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
+    "extends": ["plugin:storybook/recommended"]
   },
   "babel": {
     "presets": [
