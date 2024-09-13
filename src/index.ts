@@ -1,2 +1,2 @@
-export * from "./stories/Button";
-export * from "./stories/Header";
+export * from "./stories/Button.tsx";
+export * from "./stories/Header.tsx";
