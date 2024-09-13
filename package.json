@@ -9,7 +9,7 @@
   "repository": "https://github.com/jumib/sp-stories.git#test/npm-release",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cross-env BABEL_ENV=production babel src -d dist",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

@@ -10,20 +10,11 @@ function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, "package.json")));
 }
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
-  addons: [
-    getAbsolutePath("@storybook/addon-onboarding"),
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@chromatic-com/storybook"),
-    getAbsolutePath("@storybook/addon-interactions"),
-  ],
-  framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
-    options: {},
-    core: {
-      builder: "@storybook/builder-webpack5",
-    },
+  stories: ["../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  framework: "@storybook/react",
+  core: {
+    builder: "@storybook/builder-vite",
   },
 };
 export default config;
