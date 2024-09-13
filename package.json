@@ -1,6 +1,6 @@
 {
   "name": "@jumib/sp-stories",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "스토리북 빌드 테스트",
   "version": "0.1.0",
