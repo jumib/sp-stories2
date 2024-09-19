@@ -5,7 +5,12 @@
   "description": "스토리북 빌드 테스트",
   "version": "0.1.1",
   "license": "MIT",
-  "main": "dist/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/jumib/sp-stories.git#test/npm-release",
   "scripts": {
     "dev": "vite",
